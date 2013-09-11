@@ -1,0 +1,40 @@
+/* This default CSS assumes a 1024x768px iPad display, and will simply get you running with that. */
+
+/********  PAGE STRUCTURE & HEADER **********/
+body {
+	margin: 0;
+	background: #EEE;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.container {
+	width: 1024px;
+	min-height: 768px;
+	background: #FFF;
+	position: relative; /* So that you can absolutely position anything inside of the .container, relative to it, rather than to Window. */
+	display: block;
+	margin: 0 auto;
+	border-width: 1px;
+	border-style: none solid solid; 
+	border-color: #A4A4A4;
+}
+
+/********  COMMON ELEMENTS BETWEEN PAGES/TABS  **********/
+.btn-group {
+	display: block;
+	margin: 30px 0 30px 20px;
+}
+
+article {
+	margin: 20px 50px 0 100px;
+	border: 2px solid black;
+}
+footer {
+	display: block;
+	width: 400px;
+	height: 30px;
+}
+
+/********  TAB/PAGE-SPECIFIC ELEMENTS  **********/
+
