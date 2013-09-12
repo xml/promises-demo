@@ -1,7 +1,8 @@
 promises-demo
 =============
 
-Shell project for Javascript promises talk 
+Shell project for Javascript promises talk, designed to facilitate easy interaction with some promise objects. 
+For this reason, we've broken all kinds of good practices, to make it easier to inspect what we're working on. 
 
 You should only need to work on app.js. Complete the areas marked `//IMPLEMENT`
 Open `index.html` in your browser to interact with your work. 
