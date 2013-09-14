@@ -128,7 +128,7 @@ function doMoreStuff() {
 
 
     // NETWORK OPERATION
-    xhrPromise = $.ajax({ url: 'http://www.html5rocks.com/en/tutorials/file/xhr2/' });
+    xhrPromise = $.ajax({ url: 'http://www.html5rocks.com/en/tutorials/file/xhr2/' }).promise();
     // Now, take that promise, stripOutMainContent and then writeArticleToDOM
     // NOTE: stripOutMainContent still needs to be implemented!!!
     // (Wat? JQuery promises are weird... What do we do?)
