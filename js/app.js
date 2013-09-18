@@ -84,7 +84,7 @@ function delayNew(ms) {
     var delayMessage = 'Delay Resolved after ' + ms + ' milliseconds.';
 
     // Your code follows...
-    // IMPLEMENT
+    // IMPLEMENT #1
     
 
 
@@ -97,13 +97,13 @@ function simpleWrapper(value) {
     // Creating Promises for simple values or synchronous function output
 
     // We just wrap the basic value and immediately return the resolved promise.
-    // IMPLEMENT
+    // IMPLEMENT #2
     
 }
 
 function chainSimplePromise(value) {
     // Make a promise using our wrapper function, then look at what's inside. 
-    // IMPLEMENT
+    // IMPLEMENT #3
 
 }
 
@@ -111,14 +111,14 @@ function stripOutMainContent(wholePage) {
     // First we perform some basic DOM stuff to get the content:
     var content = $(wholePage).find('section').html()
     // But now, we need to wrap this content in a promise, so we can continue a chain... 
-    // IMPLEMENT 
+    // IMPLEMENT #11
     
 }
 
 function writeArticleToDOM(articleText) {
     $('article').html(articleText);
     // and, just as good form, return a promise to the end of the chain, containing articleText, so we can see the output:
-    // IMPLEMENT
+    // IMPLEMENT #12
     
 }
 
@@ -132,12 +132,12 @@ function doMoreStuff() {
     // Now, take that promise, stripOutMainContent and then writeArticleToDOM
     // NOTE: stripOutMainContent still needs to be implemented!!!
     // (Wat? JQuery promises are weird... What do we do?)
-    // IMPLEMENT:
+    // IMPLEMENT #9
     // compoundXHR = 
 
     // Now, because this is a network operation, it can fail for all kinds of reasons. 
     // Handle errors with the provided 'errorLogger' function. 
-    // IMPLEMENT:
+    // IMPLEMENT #10
 
     // NETWORK OPERATION ENDS
 
@@ -148,20 +148,20 @@ function doMoreStuff() {
     // IMPLEMENT
     // simplePromise = 
     // Now, access this promise and just log the content:
-    // IMPLEMENT
+    // IMPLEMENT #6
 
     // SIMPLE VALUE PROMISE ENDS
 
 
     // TIMEOUT PROMISE
     // Create a new promise based on a Timeout of 2500ms, using our promise-generating delayNew Function;
-    // IMPLEMENT
+    // IMPLEMENT #7
     // delayPromise = 
     /* ( Side-note: Alternately, we could actually use Q's convenience method for timeouts, which returns a promise:
             ex.: delayPromise = Q.delay(2500) ) */
 
     // Now, access this delayPromise and just log the content:
-    // IMPLEMENT
+    // IMPLEMENT #8
 
     // TIMEOUT PROMISE ENDS
 
@@ -170,9 +170,10 @@ function doMoreStuff() {
     // The .all() method returns a new, aggregated, promise. 
     // It's resolved when an entire array of promises are each resolved.
     // We want an aggregate promise composed of simplePromise, compoundXHR & delayPromise
-    // Then, log that promise
-    // Then, run writeToDOMAgain
-    // IMPLEMENT
+        // Then, log that promise
+        // Then, run writeToDOMAgain
+    // IMPLEMENT #13 (depends on #11-#12)
+
 }
 
 
@@ -182,17 +183,17 @@ function doMoreStuff() {
 // IMPLEMENT 
 // docPromise = 
 $('document').ready(function(){
-    console.log('Doc Ready. No other functions ready yet.') // disable me when more interesting things are happening
+    // console.log('Doc Ready. No other functions ready yet.') // disable me when more interesting things are happening
     var readyMessage = 'Document is ready now. Go Ahead and do more promise stuff!';
     // This is where you should resolve the docPromise, with the message above...
-    // IMPLEMENT
+    // IMPLEMENT #4
 
 }) 
 // Create handlers for the docPromise that:
-// 1. Just shows its value 
+// 1. Just shows its value
 // 2. Uses the 'writeToDOM' function to print it out
 // 3. continues our control-flow with doMoreStuff !
 
-// IMPLEMENT
+// IMPLEMENT #5
 
 

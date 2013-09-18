@@ -35,18 +35,19 @@
     </header>
     <section id="mainContent" role=main>
         
-        <div class="btn-group">
-            <button class="btn" onclick="chainSimplePromise('Huh. It works.')">Simple, Immediate Resolution</button>
-        </div>
-
+        
         <div class="btn-group">
             <button class="btn" onclick="delayOld(1500)">DelayOld</button>
             <button class="btn" onclick="delayNew(1500).then(valueLogger)">DelayNew</button>
         </div>
 
         <div class="btn-group">
+            <button class="btn" onclick="chainSimplePromise('Huh. It works.')">Simple, Immediate Resolution</button>
+        </div>
+
+        <div class="btn-group">
             <button class="btn" onclick="createDeferred()">Create New Deferred</button>
-            <button class="btn" onclick="inspectDeferred()">Inspect Deferred</button>
+            <button class="btn" onclick="inspectDeferred()">Inspect Promise</button>
             <button class="btn" onclick="isDeferredResolved()">Deferred is Fulfilled?</button>
             <button class="btn" onclick="addHandlerToDeferred()">Add a .then()</button>
             <button class="btn" onclick="resolveDeferred()">Resolve Deferred!</button>
